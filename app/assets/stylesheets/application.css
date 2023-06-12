@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*top*/
+.top-title{
+  margin :25px;
+}
+.top-text1{
+  margin:25px 70px ;
+}
+.top-text2{
+  margin:25px 70px ;
+}
+.top-a{
+  margin:25px 70px;
+}
+/*index*/
+.index-title{
+  margin:50px 0px 20px 50px;
+}
+.table-area{
+  margin-left:50px;
+}
+.table-1{
+  width:22%;
+}
+.table-2{
+  width:45%;
+}
+.table-3{
+  width:33%;
+}
+.new-area{
+  margin:20px 0 10px 50px;
+}
+/*show*/
+.show-title{
+  margin:30px 0 0 70px;
+}
+.show-body{
+  margin:30px 0 30px 70px;
+}
+.show-link{
+  margin-left:70px;
+}
+/*edit*/
+.edit-page{
+  margin-top: 30px;
+  margin-left: 30px;
+}
