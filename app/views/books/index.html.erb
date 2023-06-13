@@ -3,9 +3,9 @@
 <table class="table-area">
   <thead>
     <tr>
-      <th class="table-1">Title</th>
-      <th class="table-2">Body</th>
-      <th class="table-3"></th>
+      <th>Title</th>
+      <th>Body</th>
+      <th class="table-link"></th>
     </tr>
   </thead>
   <% @books.each do |book| %>
@@ -24,14 +24,21 @@
 
 <div class="new-area">
  <h2 class="new-title">New book</h2>
- 
  <% if @book.errors.any? %>
-  <%= @book.errors.count %>errors prohibited this book form saved:
-  <ul>
-    <% @book.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
+  <div class="new-error">
+   <div class="new-error-comment-area">
+     <p class="new-error-comment">
+      <%= @book.errors.count %>errors prohibited this book form saved:
+     </p>
+   </div>
+   <div class="new-error-message-area">
+    <ul>
+     <% @book.errors.full_messages.each do |message| %>
+       <li class="new-error-message"><%= message %></li>
+     <% end %>
+    </ul>
+   </div>
+  </div>
 <% end %>
 
   <%= form_with model: @book do |f| %>
